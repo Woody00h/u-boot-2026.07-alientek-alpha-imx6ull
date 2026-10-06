@@ -1,0 +1,10 @@
+if TARGET_ALIENTEK_ALPHA_IMX6ULL
+config SYS_BOARD
+    default "alpha_imx6ull"
+config SYS_VENDOR
+    default "alientek"
+config SYS_CONFIG_NAME
+    default "alientek_alpha_imx6ull"
+config IMX_CONFIG
+    default "board/alientek/alpha_imx6ull/imximage.cfg"
+endif

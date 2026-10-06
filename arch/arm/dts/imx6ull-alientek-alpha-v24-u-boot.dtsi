@@ -1,0 +1,11 @@
+// SPDX-License-Identifier: GPL-2.0+
+#include "imx6ull-u-boot.dtsi"
+&uart1 { bootph-all; };
+&pinctrl_uart1 { bootph-all; };
+&rngb { bootph-all; };
+
+/* Use WDOG1 internal SoC reset for the U-Boot reset command. */
+&wdog1 {
+	/delete-property/ fsl,ext-reset-output;
+	status = "okay";
+};
